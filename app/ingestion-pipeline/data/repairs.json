@@ -1,0 +1,698 @@
+[
+  {
+    "_id": {
+      "$binary": {
+        "base64": "61623339613161632d363064332d346235392d623436662d396635313764393065383838==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "90ee1a8e01f3eb6b"
+    },
+    "productDescription": "LG C3 Series 55-Inch Class OLED Evo 4K UHD Smart TV",
+    "partner": {
+      "_id": "4586691",
+      "name": "Tech Innovations Group"
+    },
+    "businessIncidentNumber": "R-20250724-895",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ITEM_IS_NOT_CORRECT",
+      "businessIncidentReason": "DOES_NOT_POWER_ON"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "34343966616530312d393364342d343562332d396262362d303238633837363938313161==",
+            "subType": "04"
+          }
+        },
+        "costInformation": true,
+        "damageDescription": "damage 8",
+        "depot": {
+          "$numberInt": "22"
+        },
+        "repairOrderNumber": "7422674150751",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1705184845000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1705184845000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1705187680000"
+      }
+    },
+    "version": {
+      "$numberLong": "1"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "36373631666262322d613030352d346262332d613330622d363566313163353862346566==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "b4686a3f8b7ab2bb"
+    },
+    "productDescription": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+    "partner": {
+      "_id": "1967911",
+      "name": "Global Retail Solutions"
+    },
+    "businessIncidentNumber": "R-20250724-561",
+    "status": "PENDING",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ITEM_IS_NOT_CORRECT",
+      "businessIncidentReason": "SCRATCHED_SURFACE"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "66646339366564382d643832362d343762302d393763392d323766316362366437636237==",
+            "subType": "04"
+          }
+        },
+        "costInformation": false,
+        "damageDescription": "damage 10",
+        "depot": {
+          "$numberInt": "43"
+        },
+        "repairOrderNumber": "1340511436688",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1629247776000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1629247776000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1629248607000"
+      }
+    },
+    "version": {
+      "$numberLong": "8"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "35346530363730302d393135662d343736612d396334642d643661623161396431323034==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "b49f41516daae110"
+    },
+    "productDescription": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+    "partner": {
+      "_id": "7576454",
+      "name": "Tech Innovations Group"
+    },
+    "businessIncidentNumber": "R-20250724-664",
+    "status": "COMPLETED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "WRONG_SIZE",
+      "businessIncidentReason": "DOES_NOT_POWER_ON"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "35373730353662662d306564312d343135662d393531362d306565633465363166313232==",
+            "subType": "04"
+          }
+        },
+        "costInformation": true,
+        "damageDescription": "damage 4",
+        "depot": {
+          "$numberInt": "19"
+        },
+        "repairOrderNumber": "7821835714610",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1615341788000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1615341788000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1615344513000"
+      }
+    },
+    "version": {
+      "$numberLong": "4"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "39366439386230662d633263642d343039392d626361302d623738623433313364383535==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "94bd4eec809a5aa7"
+    },
+    "productDescription": "Dyson V15 Detect Cordless Vacuum Cleaner",
+    "partner": {
+      "_id": "5601562",
+      "name": "Apex Distributors"
+    },
+    "businessIncidentNumber": "R-20250724-622",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "WRONG_SIZE",
+      "businessIncidentReason": "LATE_DELIVERY"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "62653261636161392d613734372d346634662d626231362d666539616464346339376663==",
+            "subType": "04"
+          }
+        },
+        "costInformation": true,
+        "damageDescription": "damage 4",
+        "depot": {
+          "$numberInt": "21"
+        },
+        "repairOrderNumber": "3797752059636",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1709090154000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1709090154000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1709091129000"
+      }
+    },
+    "version": {
+      "$numberLong": "8"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "62646134346436612d626364302d343837652d613834322d316463613833333232363764==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "9bfa96966073dbe3"
+    },
+    "productDescription": "Nintendo Switch OLED Model",
+    "partner": {
+      "_id": "2672636",
+      "name": "Global Retail Solutions"
+    },
+    "businessIncidentNumber": "R-20250724-560",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "DAMAGED_ITEM",
+      "businessIncidentReason": "SCRATCHED_SURFACE"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "39623462346139332d333836372d343865302d386539382d633939383464336663373165==",
+            "subType": "04"
+          }
+        },
+        "costInformation": true,
+        "damageDescription": "damage 3",
+        "depot": {
+          "$numberInt": "44"
+        },
+        "repairOrderNumber": "2340384369540",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1674663718000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1674663718000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1674665148000"
+      }
+    },
+    "version": {
+      "$numberLong": "10"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "65316130643933352d306366332d346535382d383762332d633532323261333139333539==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "8597295bd828aa78"
+    },
+    "productDescription": "Bose QuietComfort Earbuds II",
+    "partner": {
+      "_id": "2474283",
+      "name": "Apex Distributors"
+    },
+    "businessIncidentNumber": "R-20250724-324",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ITEM_IS_NOT_CORRECT",
+      "businessIncidentReason": "SCRATCHED_SURFACE"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "34383439313133302d336363332d343935392d613636372d636439666236363439623635==",
+            "subType": "04"
+          }
+        },
+        "costInformation": false,
+        "damageDescription": "damage 6",
+        "depot": {
+          "$numberInt": "17"
+        },
+        "repairOrderNumber": "7804917399452",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1643554359000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1643554359000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1643554977000"
+      }
+    },
+    "version": {
+      "$numberLong": "7"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "64653862643736342d353339392d343065642d616437342d613831393938376366383735==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "bb1a0205fa2a02a5"
+    },
+    "productDescription": "Dyson V15 Detect Cordless Vacuum Cleaner",
+    "partner": {
+      "_id": "3788926",
+      "name": "Tech Innovations Group"
+    },
+    "businessIncidentNumber": "R-20250724-771",
+    "status": "CANCELLED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "WRONG_SIZE",
+      "businessIncidentReason": "TOO_SMALL"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "62363835323933302d653731342d343365392d386135372d346437643331666631643836==",
+            "subType": "04"
+          }
+        },
+        "costInformation": true,
+        "damageDescription": "damage 2",
+        "depot": {
+          "$numberInt": "33"
+        },
+        "repairOrderNumber": "4260699666360",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1677397257000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1677397257000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1677398261000"
+      }
+    },
+    "version": {
+      "$numberLong": "0"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "36653330613431652d343336372d346162612d616239302d666531663731326338663164==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "8223347f3b58a765"
+    },
+    "productDescription": "Nintendo Switch OLED Model",
+    "partner": {
+      "_id": "6856801",
+      "name": "Swift Logistics"
+    },
+    "businessIncidentNumber": "R-20250724-512",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ITEM_IS_NOT_CORRECT",
+      "businessIncidentReason": "COLOR_DOES_NOT_MATCH_ITEM"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "30323463323262622d363766392d346662632d386135372d366632653732303537373236==",
+            "subType": "04"
+          }
+        },
+        "costInformation": false,
+        "damageDescription": "damage 6",
+        "depot": {
+          "$numberInt": "12"
+        },
+        "repairOrderNumber": "1077254369937",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1678838487000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1678838487000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1678839951000"
+      }
+    },
+    "version": {
+      "$numberLong": "7"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "32633965613333622d643666392d343632362d626433372d326b306162643235616631==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "b3c42420a5244ad7"
+    },
+    "productDescription": "Samsung 65-inch Class QLED 4K UHD Smart TV",
+    "partner": {
+      "_id": "7834937",
+      "name": "Global Retail Solutions"
+    },
+    "businessIncidentNumber": "R-20250724-444",
+    "status": "PENDING",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "DAMAGED_ITEM",
+      "businessIncidentReason": "LATE_DELIVERY"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "34396532396365392d623331362d346264612d623938332d333264366435323631333166==",
+            "subType": "04"
+          }
+        },
+        "costInformation": false,
+        "damageDescription": "damage 10",
+        "depot": {
+          "$numberInt": "46"
+        },
+        "repairOrderNumber": "8533553195720",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1732033852000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1732033852000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1732035568000"
+      }
+    },
+    "version": {
+      "$numberLong": "2"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "38326161373533632d343533372d343535642d393164372d633761346437353736306234==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "9a121e01d7973a9e"
+    },
+    "productDescription": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+    "partner": {
+      "_id": "3841038",
+      "name": "Tech Innovations Group"
+    },
+    "businessIncidentNumber": "R-20250724-284",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "FAULTY_PRODUCT",
+      "businessIncidentReason": "COLOR_DOES_NOT_MATCH_ITEM"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "33303565303738362d326664372d343062332d623866612d633430373961613966616366==",
+            "subType": "04"
+          }
+        },
+        "costInformation": false,
+        "damageDescription": "damage 10",
+        "depot": {
+          "$numberInt": "31"
+        },
+        "repairOrderNumber": "4478717992300",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1641573218000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1641573218000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1641574517000"
+      }
+    },
+    "version": {
+      "$numberLong": "2"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "64313262333463352d363764382d393065312d323334352d363738393061626364656667==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "b8a97c6d5e4f3a2b"
+    },
+    "productDescription": "Apple AirPods Pro (2nd Generation)",
+    "partner": {
+      "_id": "1234567",
+      "name": "Prime Merchandise"
+    },
+    "businessIncidentNumber": "R-20250724-111",
+    "status": "IN_PROGRESS",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "DELIVERY_ISSUE",
+      "businessIncidentReason": "LATE_DELIVERY"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "37363534333231302d396138622d376336642d356534662d336232613130393837363534==",
+            "subType": "04"
+          }
+        },
+        "costInformation": true,
+        "damageDescription": "damage 1",
+        "depot": {
+          "$numberInt": "15"
+        },
+        "repairOrderNumber": "9876543210987",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1688563200000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1688563200000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1688563500000"
+      }
+    },
+    "version": {
+      "$numberLong": "3"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "656e3666376138622d396330642d316532662d336134622d356336643765386639613062==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "e0d1c2b3a4f5e6d7"
+    },
+    "productDescription": "Logitech MX Master 3S Wireless Performance Mouse",
+    "partner": {
+      "_id": "9876543",
+      "name": "Apex Distributors"
+    },
+    "businessIncidentNumber": "R-20250724-222",
+    "status": "PENDING",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "FAULTY_PRODUCT",
+      "businessIncidentReason": "DOES_NOT_POWER_ON"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "30623163326433652d346635612d366237632d386439652d306631613262336334643565==",
+            "subType": "04"
+          }
+        },
+        "costInformation": false,
+        "damageDescription": "damage 9",
+        "depot": {
+          "$numberInt": "28"
+        },
+        "repairOrderNumber": "1234567890123",
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1719264000000"
+          }
+        },
+        "_class": "REPAIR"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1719264000000"
+      }
+    },
+    "lastUpdatedAt": {
+      "$date": {
+        "$numberLong": "1719264300000"
+      }
+    },
+    "version": {
+      "$numberLong": "5"
+    }
+  }
+]

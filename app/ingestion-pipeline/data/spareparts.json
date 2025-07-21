@@ -1,0 +1,353 @@
+[
+  {
+    "_id": {
+      "$binary": {
+        "base64": "YzUyNzU4Y2YtMWI5ZC00ZjZlLTg2OGQtMmZhNGM0ZTU2YmU1==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a01b2c3d4e5f67890abcde"
+    },
+    "productDescription": "Apple MacBook Pro 14-inch M3",
+    "partner": {
+      "_id": "1000101",
+      "name": "Tech Solutions GmbH"
+    },
+    "businessIncidentNumber": "R-20250724-123",
+    "status": "COMPLETED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "PRODUCT_DEFECT",
+      "businessIncidentReason": "SCREEN_ISSUE",
+      "businessIncidentAdditionalNote": "Screen flickers randomly"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MmY4MmMxZDktNzgzMC00Y2UzLTlmZDYtMWUyYjNlNGY1YjY3==",
+            "subType": "04"
+          }
+        },
+        "installationRequired": true,
+        "spareParts": [
+          {
+            "reason": {
+              "_id": {
+                "$numberInt": "1"
+              },
+              "message": "Defekter Bildschirm",
+              "description": "Defective screen"
+            },
+            "costBearer": "CUSTOMER",
+            "count": {
+              "$numberInt": "1"
+            },
+            "sparePartNo": "SCRN9876",
+            "sparePartDescription": "Replacement Retina Display",
+            "goodwill": false
+          }
+        ],
+        "orderNumbers": [
+          "9948400159",
+          "8877665544"
+        ],
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1720689600000"
+          }
+        },
+        "_class": "SPARE_PARTS"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1720688400000"
+      }
+    },
+    "version": {
+      "$numberLong": "2"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "ZjgxZTU3YTctMjFhYi00M2YzLTkzZTMtYjk4NzY1NDMyMWZm==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a02b3c4d5e6f7890abcdef"
+    },
+    "productDescription": "Samsung 65-inch Class QLED 4K UHD Smart TV",
+    "partner": {
+      "_id": "2000200",
+      "name": "Global Electronics Corp."
+    },
+    "businessIncidentNumber": "R-20250724-456",
+    "status": "IN_PROGRESS",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "DELIVERY_ISSUE",
+      "businessIncidentReason": "DAMAGED_DURING_TRANSIT",
+      "businessIncidentAdditionalNote": "Cracked screen on arrival"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "NDQ4NzY2ZjctMzQxMi00OWI1LThhNmMtMjQzZTU2NzgzMjlk==",
+            "subType": "04"
+          }
+        },
+        "installationRequired": false,
+        "spareParts": [
+          {
+            "reason": {
+              "_id": {
+                "$numberInt": "3"
+              },
+              "message": "Transport Schaden",
+              "description": "Shipping damage"
+            },
+            "costBearer": "PARTNER",
+            "count": {
+              "$numberInt": "1"
+            },
+            "sparePartNo": "PNL54321",
+            "sparePartDescription": "New display panel",
+            "goodwill": true
+          }
+        ],
+        "orderNumbers": [
+          "1122334455"
+        ],
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1720776000000"
+          }
+        },
+        "_class": "SPARE_PARTS"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1720774800000"
+      }
+    },
+    "version": {
+      "$numberLong": "1"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "YTI2ZmU3YzgtMjk1MC00MDk3LWE4YzYtMzQ1Yjk4Y2Y3ZGEx==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a03c4d5e6f7a890abcdef1"
+    },
+    "productDescription": "Logitech MX Master 3S Wireless Performance Mouse",
+    "partner": {
+      "_id": "3000300",
+      "name": "Office Tech Supplies"
+    },
+    "businessIncidentNumber": "R-20250724-789",
+    "status": "PENDING",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ITEM_IS_NOT_CORRECT",
+      "businessIncidentReason": "DOES_NOT_CONNECT",
+      "businessIncidentAdditionalNote": "Mouse not detected by computer"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "YjljZGYwMTItMzQ1Ni03ODkwLWFjZGUtZmU1NjdiOGMyZGQ==",
+            "subType": "04"
+          }
+        },
+        "installationRequired": false,
+        "spareParts": [
+          {
+            "reason": {
+              "_id": {
+                "$numberInt": "5"
+              },
+              "message": "Funktionsfehler",
+              "description": "Functional error"
+            },
+            "costBearer": "CUSTOMER",
+            "count": {
+              "$numberInt": "1"
+            },
+            "sparePartNo": "USB4567",
+            "sparePartDescription": "USB Receiver",
+            "goodwill": true
+          }
+        ],
+        "orderNumbers": [
+          "9876543210"
+        ],
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1720862400000"
+          }
+        },
+        "_class": "SPARE_PARTS"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1720861200000"
+      }
+    },
+    "version": {
+      "$numberLong": "0"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "NGE1YjZjZDctNzg5MC0xMjM0LTVmN2QtOTBhYmMxZTIzNDU2Nw==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a04d5e6f7a8b9012345678"
+    },
+    "productDescription": "Kindle Paperwhite (11th Gen)",
+    "partner": {
+      "_id": "4000400",
+      "name": "Bookworm Depot"
+    },
+    "businessIncidentNumber": "R-20250724-012",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ADDITIONAL_REASONS",
+      "businessIncidentReason": "BATTERY_DRAIN",
+      "businessIncidentAdditionalNote": "Battery drains too quickly after full charge"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "ZTY1ZDM0YzUtODk3Ni01NDEwLThlNzYtMjU2NzQzOWEyYjNj==",
+            "subType": "04"
+          }
+        },
+        "installationRequired": false,
+        "spareParts": [
+          {
+            "reason": {
+              "_id": {
+                "$numberInt": "7"
+              },
+              "message": "Akku Problem",
+              "description": "Battery issue"
+            },
+            "costBearer": "PARTNER",
+            "count": {
+              "$numberInt": "1"
+            },
+            "sparePartNo": "BATT001",
+            "sparePartDescription": "Internal battery pack",
+            "goodwill": true
+          }
+        ],
+        "orderNumbers": [
+          "6677889900"
+        ],
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1720948800000"
+          }
+        },
+        "_class": "SPARE_PARTS"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1720947600000"
+      }
+    },
+    "version": {
+      "$numberLong": "3"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTBhYmNkZWZlZzEyMzQ1Ng==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a05e6f7a8b9c0d23456789"
+    },
+    "productDescription": "Dyson V15 Detect Cordless Vacuum Cleaner",
+    "partner": {
+      "_id": "5000500",
+      "name": "Clean Home Solutions"
+    },
+    "businessIncidentNumber": "R-20250724-345",
+    "status": "IN_PROGRESS",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "OTHERS",
+      "businessIncidentReason": "LOSS_OF_SUCTION",
+      "businessIncidentAdditionalNote": "Suction power has significantly decreased over time"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "ZmVkY2JhOTg3NjU0MzIxMDlmZThkYzMyYjFhYzU2Nzg5MDEy==",
+            "subType": "04"
+          }
+        },
+        "installationRequired": true,
+        "spareParts": [
+          {
+            "reason": {
+              "_id": {
+                "$numberInt": "9"
+              },
+              "message": "Saugkraft Problem",
+              "description": "Suction power issue"
+            },
+            "costBearer": "CUSTOMER",
+            "count": {
+              "$numberInt": "1"
+            },
+            "sparePartNo": "FLTR6789",
+            "sparePartDescription": "HEPA Filter Replacement",
+            "goodwill": false
+          }
+        ],
+        "orderNumbers": [
+          "1029384756"
+        ],
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1721035200000"
+          }
+        },
+        "_class": "SPARE_PARTS"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1721034000000"
+      }
+    },
+    "version": {
+      "$numberLong": "0"
+    }
+  }
+]

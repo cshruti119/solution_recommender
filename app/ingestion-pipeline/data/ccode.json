@@ -1,0 +1,888 @@
+Here are 10 randomized JSON records based on your input, ready for you to copy:
+
+JSON
+
+[
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MjQ2ODAxMzg3NzkxMzQ1NjYwMjE0NTUzNzgwNw==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a01b2c3d4e5f67890abcde"
+    },
+    "salesOrderPositionItemId": "c2b1a0d9-e8f7-4a3b-9c8d-7e6f5a4b3c2d",
+    "salesOrderId": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "servicePositionItemId": "5f4e3d2c-1b0a-9c8d-7e6f-5a4b3c2d1e0f",
+    "productDescription": "LG OLED C3 Series 65-inch 4K UHD Smart TV",
+    "partner": {
+      "_id": "1000101",
+      "name": "ElectroMart Inc."
+    },
+    "businessIncidentNumber": "R-20250724-101",
+    "status": "COMPLETED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "PRODUCT_DEFECT",
+      "businessIncidentReason": "SCREEN_DEAD_PIXELS",
+      "businessIncidentAdditionalNote": "Multiple dead pixels visible on screen"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "NGY1ZDhjYjAtMTIzNC00NTY3LTg5YmItY2RlZjAxMjM0NTY3==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "a1b2c3d4-e5f6-4g7h-8i9j-0k1l2m3n4o5p",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "100.0"
+          },
+          "currency": "EUR"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752842529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752842529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Sarah Miller"
+    },
+    "version": {
+      "$numberLong": "2"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "OTg3NjU0MzIxMDlhYmNkZWZlZzEyMzQ1Njc4OTA==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a02b3c4d5e6f7890abcdef"
+    },
+    "salesOrderPositionItemId": "d1c2b3a4-e5f6-4g7h-8i9j-0k1l2m3n4o5p",
+    "salesOrderId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "servicePositionItemId": "1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+    "productDescription": "Bose QuietComfort Earbuds II",
+    "partner": {
+      "_id": "2000200",
+      "name": "Audio World"
+    },
+    "businessIncidentNumber": "R-20250724-202",
+    "status": "IN_PROGRESS",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "PARTIAL_OR_NOT_PROVIDED",
+      "businessIncidentReason": "INCORRECT_COLOR",
+      "businessIncidentAdditionalNote": "Received black earbuds instead of white"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTBhYmNkZWZlZzEyMzQ1Ng==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "25.0"
+          },
+          "currency": "USD"
+        },
+        "isAmountEnteredManually": true,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752843529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752843529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "John Doe"
+    },
+    "version": {
+      "$numberLong": "1"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MTEyMjMzNDQ1NTY2Nzc4ODk5MDAxMTIyMzM0NDU1NjY3Nw==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a03c4d5e6f7a890abcdef1"
+    },
+    "salesOrderPositionItemId": "e6d5c4b3-a2b1-4c3d-9e8f-7g6h5i4j3k2l",
+    "salesOrderId": "abcdef01-2345-6789-abcd-ef0123456789",
+    "servicePositionItemId": "8h7g6f5e-4d3c-2b1a-0fed-cba987654321",
+    "productDescription": "Dyson V15 Detect Cordless Vacuum Cleaner",
+    "partner": {
+      "_id": "3000300",
+      "name": "Home Appliances Co."
+    },
+    "businessIncidentNumber": "R-20250724-303",
+    "status": "PENDING",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "FAULTY_PRODUCT",
+      "businessIncidentReason": "LOSS_OF_SUCTION",
+      "businessIncidentAdditionalNote": "Vacuum cleaner lost suction after 2 weeks"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "Y2QxZTA5ODctNjU0My0yYjFhLTBjYWQtZThmN2Q2NTQzMjEwMQ==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "c1d2e3f4-g5h6-7i8j-9k0l-1m2n3o4p5q6r",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "50.0"
+          },
+          "currency": "GBP"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752844529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752844529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Jane Smith"
+    },
+    "version": {
+      "$numberLong": "3"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "YWJjZGVmMDExMjM0NTY3ODkwYWJjZGVmMDExMg==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a04d5e6f7a8b9012345678"
+    },
+    "salesOrderPositionItemId": "9z8y7x6w-5v4u-3t2s-1r0q-9p8o7n6m5l4k",
+    "salesOrderId": "abcdef01-2345-6789-abcd-ef0123456789",
+    "servicePositionItemId": "7i6h5g4f-3e2d-1c0b-9a8b-7c6d5e4f3g2h",
+    "productDescription": "Instant Pot Duo 7-in-1 Electric Pressure Cooker",
+    "partner": {
+      "_id": "4000400",
+      "name": "Kitchen Gadgets Ltd."
+    },
+    "businessIncidentNumber": "R-20250724-404",
+    "status": "COMPLETED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "CUSTOMER_ERROR",
+      "businessIncidentReason": "ORDERED_WRONG_SIZE",
+      "businessIncidentAdditionalNote": "Ordered 6-quart instead of 8-quart"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "Njg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nw==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "d1e2f3g4-h5i6-7j8k-9l0m-1n2o3p4q5r6s",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "10.0"
+          },
+          "currency": "CAD"
+        },
+        "isAmountEnteredManually": true,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752845529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752845529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Michael Brown"
+    },
+    "version": {
+      "$numberLong": "4"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMw==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a05e6f7a8b9c0d23456789"
+    },
+    "salesOrderPositionItemId": "v1u2t3s4-r5q6-p7o8-n9m0-l1k2j3i4h5g6",
+    "salesOrderId": "12345678-90ab-cdef-1234-567890abcdef",
+    "servicePositionItemId": "k9l8m7n6-o5p4-q3r2-s1t0-u9v8w7x6y5z4",
+    "productDescription": "Nintendo Switch OLED Model",
+    "partner": {
+      "_id": "5000500",
+      "name": "Game World Direct"
+    },
+    "businessIncidentNumber": "R-20250724-505",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ADDITIONAL_REASONS",
+      "businessIncidentReason": "JOY_CON_DRIFT",
+      "businessIncidentAdditionalNote": "Left Joy-Con stick drifting intermittently"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "YWJjZGVmMDExMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Ng==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "e1f2g3h4-i5j6-7k8l-9m0n-1o2p3q4r5s6t",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "30.0"
+          },
+          "currency": "USD"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752846529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752846529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Emily White"
+    },
+    "version": {
+      "$numberLong": "5"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "NWY0ZDNjMmQtYmE5OC03NjU0LTMyMTEtMjM0NTY3ODkwYWJjZA==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a06f7g8h9i0j1k23456789"
+    },
+    "salesOrderPositionItemId": "cba98765-4321-0fed-cba9-876543210fed",
+    "salesOrderId": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "servicePositionItemId": "z9y8x7w6-v5u4-t3s2-r1q0-p9o8n7m6l5k4",
+    "productDescription": "Bose SoundLink Revolve+ II Bluetooth Speaker",
+    "partner": {
+      "_id": "6000600",
+      "name": "Sound & Vision Co."
+    },
+    "businessIncidentNumber": "R-20250724-606",
+    "status": "COMPLETED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "DELIVERY_ISSUE",
+      "businessIncidentReason": "LOST_IN_TRANSIT",
+      "businessIncidentAdditionalNote": "Package tracking stopped updating"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTBhYmNkZWZlZzEyMzQ1Njc4OTA==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "f1g2h3i4-j5k6-7l8m-9n0o-1p2q3r4s5t6u",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "150.0"
+          },
+          "currency": "EUR"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752847529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752847529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "David Green"
+    },
+    "version": {
+      "$numberLong": "6"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "NzU4NjU0MzIxMDlhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a07h8i9j0k1l2m34567890"
+    },
+    "salesOrderPositionItemId": "0fedcba9-8765-4321-0fed-cba987654321",
+    "salesOrderId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "servicePositionItemId": "abcdef01-2345-6789-abcd-ef0123456789",
+    "productDescription": "Logitech C920x HD Pro Webcam",
+    "partner": {
+      "_id": "7000700",
+      "name": "Remote Work Gear"
+    },
+    "businessIncidentNumber": "R-20250724-707",
+    "status": "IN_PROGRESS",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "FAULTY_PRODUCT",
+      "businessIncidentReason": "POOR_IMAGE_QUALITY",
+      "businessIncidentAdditionalNote": "Blurry image and poor low-light performance"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTBhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "g1h2i3j4-k5l6-7m8n-9o0p-1q2r3s4t5u6v",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "20.0"
+          },
+          "currency": "USD"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752848529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752848529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Sophia Lee"
+    },
+    "version": {
+      "$numberLong": "7"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "YmRjMzQ1Njc4OTAxMjM0NTY3ODkwYWJjZGVmMTIzNDU2Nzg5MA==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a08i9j0k1l2m3n45678901"
+    },
+    "salesOrderPositionItemId": "2a3b4c5d-6e7f-8a9b-c0d1-e2f3a4b5c6d7",
+    "salesOrderId": "12345678-90ab-cdef-1234-567890abcdef",
+    "servicePositionItemId": "h7g6f5e4-d3c2-b1a0-fedc-ba9876543210",
+    "productDescription": "Philips Hue White and Color Ambiance Smart Bulb",
+    "partner": {
+      "_id": "8000800",
+      "name": "Smart Home Connect"
+    },
+    "businessIncidentNumber": "R-20250724-808",
+    "status": "PENDING",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ITEM_IS_NOT_CORRECT",
+      "businessIncidentReason": "INCORRECT_QUANTITY",
+      "businessIncidentAdditionalNote": "Received 2 bulbs instead of 4 in pack"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "ZmVkY2JhOTg3NjU0MzIxMDlhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "h1i2j3k4-l5m6-7n8o-9p0q-1r2s3t4u5v6w",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "40.0"
+          },
+          "currency": "EUR"
+        },
+        "isAmountEnteredManually": true,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752849529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752849529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Chris Davis"
+    },
+    "version": {
+      "$numberLong": "8"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTBhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a09j0k1l2m3n4o56789012"
+    },
+    "salesOrderPositionItemId": "4c5d6e7f-8a9b-c0d1-e2f3-a4b5c6d7e8f9",
+    "salesOrderId": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "servicePositionItemId": "j9i8h7g6-f5e4-d3c2-b1a0-9876543210fe",
+    "productDescription": "Google Pixel 8 Pro",
+    "partner": {
+      "_id": "9000900",
+      "name": "Mobile Solutions Inc."
+    },
+    "businessIncidentNumber": "R-20250724-909",
+    "status": "IN_PROGRESS",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "FAULTY_PRODUCT",
+      "businessIncidentReason": "CAMERA_ISSUE",
+      "businessIncidentAdditionalNote": "Camera app crashes frequently"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "YzUyNzU4Y2YtMWI5ZC00ZjZlLTg2OGQtMmZhNGM0ZTU2YmU1==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "i1j2k3l4-m5n6-7o8p-9q0r-1s2t3u4v5w6x",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "75.0"
+          },
+          "currency": "USD"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752850529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752850529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Alex Johnson"
+    },
+    "version": {
+      "$numberLong": "9"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "NmY1ZDhjYjAtMTIzNC00NTY3LTg5YmItY2RlZjAxMjM0NTY3OA==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a0aj1k2l3m4n5o67890123"
+    },
+    "salesOrderPositionItemId": "5d6e7f8a-9b0c-1d2e-3f4a-5b6c7d8e9f0a",
+    "salesOrderId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "servicePositionItemId": "g9f8e7d6-c5b4-a321-0fed-cba987654321",
+    "productDescription": "Keurig K-Elite Single Serve Coffee Maker",
+    "partner": {
+      "_id": "1100010",
+      "name": "Coffee Lovers Inc."
+    },
+    "businessIncidentNumber": "R-20250724-001",
+    "status": "PENDING",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ADDITIONAL_REASONS",
+      "businessIncidentReason": "LEAKING_WATER",
+      "businessIncidentAdditionalNote": "Water leaking from the base of the machine"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "ZmVkY2JhOTg3NjU0MzIxMDlhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "j1k2l3m4-n5o6-7p8q-9r0s-1t2u3v4w5x6y",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "35.0"
+          },
+          "currency": "CAD"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752851529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752851529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Olivia Taylor"
+    },
+    "version": {
+      "$numberLong": "10"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "YTI2ZmU3YzgtMjk1MC00MDk3LWE4YzYtMzQ1Yjk4Y2Y3ZGExYg==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a0bk1l2m3n4o5p678901234"
+    },
+    "salesOrderPositionItemId": "6e7f8a9b-c0d1-e2f3-a4b5-c6d7e8f9a0b1",
+    "salesOrderId": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "servicePositionItemId": "f9e8d7c6-b5a4-3210-fedc-ba9876543210",
+    "productDescription": "Ninja Foodi 8-in-1 Digital Air Fry Oven",
+    "partner": {
+      "_id": "1200012",
+      "name": "Culinary Creations"
+    },
+    "businessIncidentNumber": "R-20250724-112",
+    "status": "COMPLETED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "FAULTY_PRODUCT",
+      "businessIncidentReason": "OVERHEATING_ISSUE",
+      "businessIncidentAdditionalNote": "Oven gets excessively hot on the outside"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MjQ2ODAxMzg3NzkxMzQ1NjYwMjE0NTUzNzgwN3E5ODc2NTQzMg==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "k1l2m3n4-o5p6-7q8r-9s0t-1u2v3w4x5y6z",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "60.0"
+          },
+          "currency": "GBP"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752852529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752852529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Daniel Kim"
+    },
+    "version": {
+      "$numberLong": "1"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "NGE1YjZjZDctNzg5MC0xMjM0LTVmN2QtOTBhYmMxZTIzNDU2N3g=",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a0cl2m3n4o5p6q789012345"
+    },
+    "salesOrderPositionItemId": "7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a",
+    "salesOrderId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "servicePositionItemId": "e8d7c6b5-a432-10fe-dcba-9876543210fe",
+    "productDescription": "Samsung Galaxy S24 Ultra",
+    "partner": {
+      "_id": "1300013",
+      "name": "Telecom Solutions"
+    },
+    "businessIncidentNumber": "R-20250724-213",
+    "status": "IN_PROGRESS",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "PARTIAL_OR_NOT_PROVIDED",
+      "businessIncidentReason": "INCORRECT_STORAGE_SIZE",
+      "businessIncidentAdditionalNote": "Ordered 512GB, received 256GB"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "YjljZGYwMTItMzQ1Ni03ODkwLWFjZGUtZmU1NjdiOGMyZGQxMjM0NQ==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "l1m2n3o4-p5q6-7r8s-9t0u-1v2w3x4y5z6a",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "200.0"
+          },
+          "currency": "USD"
+        },
+        "isAmountEnteredManually": true,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752853529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752853529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Grace Chen"
+    },
+    "version": {
+      "$numberLong": "2"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTBhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a0dm3n4o5p6q7r890123456"
+    },
+    "salesOrderPositionItemId": "8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d",
+    "salesOrderId": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "servicePositionItemId": "d7c6b5a4-3210-fedc-ba98-76543210fedc",
+    "productDescription": "LG CordZero A9 Kompressor Stick Vacuum",
+    "partner": {
+      "_id": "1400014",
+      "name": "Clean Living Solutions"
+    },
+    "businessIncidentNumber": "R-20250724-321",
+    "status": "RESOLVED",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "FAULTY_PRODUCT",
+      "businessIncidentReason": "BATTERY_NOT_CHARGING",
+      "businessIncidentAdditionalNote": "Vacuum battery not holding charge"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "ZmVkY2JhOTg3NjU0MzIxMDlhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "m1n2o3p4-q5r6-7s8t-9u0v-1w2x3y4z5a6b",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "90.0"
+          },
+          "currency": "EUR"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752854529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752854529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Ryan Garcia"
+    },
+    "version": {
+      "$numberLong": "3"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "OTg3NjU0MzIxMDlhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+        "subType": "04"
+      }
+    },
+    "sequenceId": {
+      "$oid": "66a0en4o5p6q7r8s901234567"
+    },
+    "salesOrderPositionItemId": "9b0c1d2e-3f4a-5b6c-7d8e-9f0a1b2c3d4e",
+    "salesOrderId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "servicePositionItemId": "c6b5a432-10fe-dcba-9876-543210fedcba",
+    "productDescription": "Sony PlayStation 5 Console",
+    "partner": {
+      "_id": "1500015",
+      "name": "Next Gen Gaming"
+    },
+    "businessIncidentNumber": "R-20250724-432",
+    "status": "IN_PROGRESS",
+    "category": "RECLAMATION",
+    "problemDetail": {
+      "businessIncidentReasonType": "ADDITIONAL_REASONS",
+      "businessIncidentReason": "OVERHEATING_ISSUE",
+      "businessIncidentAdditionalNote": "Console shuts down due to overheating"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTBhYmNkZWZlZzEyMzQ1Njc4OTA5OA==",
+            "subType": "04"
+          }
+        },
+        "compensationCodeId": "n1o2p3q4-r5s6-7t8u-9v0w-1x2y3z4a5b6c",
+        "initialAmount": {
+          "amount": {
+            "$numberDouble": "120.0"
+          },
+          "currency": "USD"
+        },
+        "isAmountEnteredManually": false,
+        "createdAt": {
+          "$date": {
+            "$numberLong": "1752855529460"
+          }
+        },
+        "_class": "COMPENSATION_CODE"
+      }
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1752855529460"
+      }
+    },
+    "createdBy": {
+      "_id": "bfade9f9-6f28-44b2-af29-94b8b156c3db",
+      "name": "Maria Rodriguez"
+    },
+    "version": {
+      "$numberLong": "4"
+    }
+  }
+]

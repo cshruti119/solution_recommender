@@ -1,0 +1,541 @@
+[
+  {
+    "_id": {
+      "$binary": {
+        "base64": "TmmSNYhAS0WK0lRJzlEIvA==",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "d82ff94b-4a18-4eb8-9f92-e1d52e4e82d8",
+    "status": "IN_PROGRESS",
+    "createdAt": {
+      "$date": "2021-08-05T11:54:08.635Z"
+    },
+    "productId": "S0D789SP",
+    "productDescription": "Spedition Wohnlandschaft 3.tlg.",
+    "salesOrderId": "1d015217-1546-4a18-9a94-923e5382cc1b",
+    "invoicedPrice": {
+      "amount": 899.99,
+      "currency": "EUR"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "uQWuBdmQRiW869x/hVz3ig==",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 20,
+          "currency": "EUR"
+        },
+        "createdAt": {
+          "$date": "2021-08-05T11:54:22.466Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "INITIATED"
+      }
+    ],
+    "version": 3,
+    "problemDetail": {
+      "businessIncidentReasonType": "ADDITIONAL_REASONS",
+      "businessIncidentReason": "OTHERS"
+    },
+    "partner": {
+      "name": "Test GmbH",
+      "_id": "1001964"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "R3o1b2F2c2QwMTI2b2E3czQ1NjY1YQ==",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "e2f8c1d9-7a3b-4c5d-9e0f-1b2c3d4e5f6a",
+    "status": "COMPLETED",
+    "createdAt": {
+      "$date": "2023-11-15T09:30:00.000Z"
+    },
+    "productId": "GAD789PL",
+    "productDescription": "Bose QuietComfort Earbuds II",
+    "salesOrderId": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "invoicedPrice": {
+      "amount": 1249.99,
+      "currency": "USD"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "aGtKMlpXcjQzNUY2RzcwQTlVMjNCdA==",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 75,
+          "currency": "USD"
+        },
+        "createdAt": {
+          "$date": "2023-11-15T09:35:15.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "APPROVED"
+      }
+    ],
+    "version": 5,
+    "problemDetail": {
+      "businessIncidentReasonType": "DELIVERY_ISSUE",
+      "businessIncidentReason": "DAMAGED_DURING_TRANSIT"
+    },
+    "partner": {
+      "name": "Global Tech Solutions Inc.",
+      "_id": "5008765"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MjQ2ODAxMzg3NzkxMzQ1NjYwMjE0NTUzNzgwNw==",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "f1e2d3c4-b5a6-7d8e-9c0f-1a2b3c4d5e6f",
+    "status": "INITIATED",
+    "createdAt": {
+      "$date": "2022-01-20T14:30:00.000Z"
+    },
+    "productId": "CAM987XY",
+    "productDescription": "Sony Alpha a7 III Mirrorless Camera",
+    "salesOrderId": "98765432-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+    "invoicedPrice": {
+      "amount": 1999.99,
+      "currency": "EUR"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "NTU2OTkwNzE2MjMyMzQ1NjUzMTYyODc2NTQzMjE=",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 100,
+          "currency": "EUR"
+        },
+        "createdAt": {
+          "$date": "2022-01-20T14:35:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "PENDING"
+      }
+    ],
+    "version": 2,
+    "problemDetail": {
+      "businessIncidentReasonType": "PRODUCT_DEFECT",
+      "businessIncidentReason": "FAULTY_SENSOR"
+    },
+    "partner": {
+      "name": "Camera World",
+      "_id": "2003456"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "NDU2Nzg5MDEyMzQ1Njc4OTA5ODc2NTQzMjEwZA==",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "11223344-5566-7788-99aa-bbccddeeff00",
+    "status": "RESOLVED",
+    "createdAt": {
+      "$date": "2024-05-01T08:00:00.000Z"
+    },
+    "productId": "HEAD1234",
+    "productDescription": "Sony WH-1000XM5 Noise Cancelling Headphones",
+    "salesOrderId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "invoicedPrice": {
+      "amount": 349.99,
+      "currency": "USD"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MA==",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 30,
+          "currency": "USD"
+        },
+        "createdAt": {
+          "$date": "2024-05-01T08:05:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "COMPLETED"
+      }
+    ],
+    "version": 4,
+    "problemDetail": {
+      "businessIncidentReasonType": "SHIPPING_DAMAGE",
+      "businessIncidentReason": "CRACKED_CASING"
+    },
+    "partner": {
+      "name": "Audio Emporium",
+      "_id": "7890123"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "NjczOTA5ODc2NTQzMjEwMTIzNDU2Nzg5MDAyMQ==",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "fedcba98-7654-3210-9876-543210abcdef",
+    "status": "IN_PROGRESS",
+    "createdAt": {
+      "$date": "2023-07-20T10:15:00.000Z"
+    },
+    "productId": "LAPTOPPRO9",
+    "productDescription": "Apple MacBook Pro 16-inch M3 Max",
+    "salesOrderId": "abcde123-4567-89ab-cdef-012345678901",
+    "invoicedPrice": {
+      "amount": 2899.00,
+      "currency": "GBP"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "YWJjZGVmMDExMjM0NTY3ODkwYWJjZGVmMDExMg==",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 150,
+          "currency": "GBP"
+        },
+        "createdAt": {
+          "$date": "2023-07-20T10:20:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "APPROVED"
+      }
+    ],
+    "version": 6,
+    "problemDetail": {
+      "businessIncidentReasonType": "PERFORMANCE_ISSUE",
+      "businessIncidentReason": "SOFTWARE_GLITCH"
+    },
+    "partner": {
+      "name": "Tech Solutions Ltd.",
+      "_id": "9988776"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTA2NTQzMjEwMTI=",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+    "status": "CLOSED",
+    "createdAt": {
+      "$date": "2020-12-01T16:00:00.000Z"
+    },
+    "productId": "GAMECONS01",
+    "productDescription": "PlayStation 5 Console",
+    "salesOrderId": "12345678-90ab-cdef-1234-567890abcdef",
+    "invoicedPrice": {
+      "amount": 499.99,
+      "currency": "EUR"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "ZmVjZGI3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTA=",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 50,
+          "currency": "EUR"
+        },
+        "createdAt": {
+          "$date": "2020-12-01T16:05:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "COMPLETED"
+      }
+    ],
+    "version": 1,
+    "problemDetail": {
+      "businessIncidentReasonType": "MISSING_PARTS",
+      "businessIncidentReason": "MISSING_CONTROLLER"
+    },
+    "partner": {
+      "name": "Game On!",
+      "_id": "4567890"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "YmRjMzQ1Njc4OTAxMjM0NTY3ODkwYWJjZGVmMTI=",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "9f8e7d6c-5b4a-3e2d-1c0b-9a8f7e6d5c4b",
+    "status": "CANCELLED",
+    "createdAt": {
+      "$date": "2022-09-10T11:00:00.000Z"
+    },
+    "productId": "TABPRO123",
+    "productDescription": "Samsung Galaxy Tab S9 Ultra",
+    "salesOrderId": "abcdef01-2345-6789-abcd-ef0123456789",
+    "invoicedPrice": {
+      "amount": 1099.00,
+      "currency": "USD"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "ZmVjZGI2YmI4YzkxMmVkMzQ1Njc4OWFiYzIwMzk=",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 70,
+          "currency": "USD"
+        },
+        "createdAt": {
+          "$date": "2022-09-10T11:05:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "REJECTED"
+      }
+    ],
+    "version": 7,
+    "problemDetail": {
+      "businessIncidentReasonType": "CUSTOMER_ERROR",
+      "businessIncidentReason": "INCORRECT_ORDER"
+    },
+    "partner": {
+      "name": "Tablet Town",
+      "_id": "3210987"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "ZmVkY2JhNzY1NDMyMTA5ODc2NTQzMjEwMTIzNDU=",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+    "status": "PENDING",
+    "createdAt": {
+      "$date": "2021-04-18T09:45:00.000Z"
+    },
+    "productId": "HEADPHONE456",
+    "productDescription": "Bose Noise Cancelling Headphones 700",
+    "salesOrderId": "cdef0123-4567-89ab-cdef-012345678901",
+    "invoicedPrice": {
+      "amount": 299.00,
+      "currency": "CAD"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MTEyMjMzNDQ1NTY2Nzc4ODk5MDAxMTIyMzM0NDU=",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 25,
+          "currency": "CAD"
+        },
+        "createdAt": {
+          "$date": "2021-04-18T09:50:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "INITIATED"
+      }
+    ],
+    "version": 8,
+    "problemDetail": {
+      "businessIncidentReasonType": "SOUND_QUALITY",
+      "businessIncidentReason": "DISTORTED_AUDIO"
+    },
+    "partner": {
+      "name": "Audio Dreams",
+      "_id": "6789012"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTA5OA==",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
+    "status": "COMPLETED",
+    "createdAt": {
+      "$date": "2023-01-05T12:00:00.000Z"
+    },
+    "productId": "VACUUMCLEANER",
+    "productDescription": "Dyson V11 Animal Cordless Vacuum Cleaner",
+    "salesOrderId": "98765432-1234-5678-90ab-cdef12345678",
+    "invoicedPrice": {
+      "amount": 599.00,
+      "currency": "EUR"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MzQ1Njc4OTAxMjM0NTY3ODkwYWJjZGVmMTIzNDU=",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 40,
+          "currency": "EUR"
+        },
+        "createdAt": {
+          "$date": "2023-01-05T12:05:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "APPROVED"
+      }
+    ],
+    "version": 9,
+    "problemDetail": {
+      "businessIncidentReasonType": "FUNCTIONALITY",
+      "businessIncidentReason": "LOSS_OF_SUCTION"
+    },
+    "partner": {
+      "name": "Home Appliances Inc.",
+      "_id": "1122334"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "Y2RlZjAxMjM0NTY3ODkwMTIzNDU2Nzg5MGFzZA==",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+    "status": "IN_PROGRESS",
+    "createdAt": {
+      "$date": "2024-03-25T15:10:00.000Z"
+    },
+    "productId": "FITNESSTRACKER",
+    "productDescription": "Fitbit Charge 6 Fitness Tracker",
+    "salesOrderId": "fedcba98-7654-3210-fedc-ba9876543210",
+    "invoicedPrice": {
+      "amount": 159.99,
+      "currency": "AUD"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MDEyMzQ1Njc4OTAxMjM0NTY3ODkwOTg3NjU0MzIxMA==",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 10,
+          "currency": "AUD"
+        },
+        "createdAt": {
+          "$date": "2024-03-25T15:15:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "INITIATED"
+      }
+    ],
+    "version": 10,
+    "problemDetail": {
+      "businessIncidentReasonType": "ACCURACY_ISSUE",
+      "businessIncidentReason": "INCORRECT_HEART_RATE"
+    },
+    "partner": {
+      "name": "Health Gadgets Co.",
+      "_id": "5566778"
+    }
+  },
+  {
+    "_id": {
+      "$binary": {
+        "base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTBkMTIzNDU2Nzg5MA==",
+        "subType": "04"
+      }
+    },
+    "category": "RECLAMATION",
+    "salesOrderPositionItemId": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+    "status": "CLOSED",
+    "createdAt": {
+      "$date": "2023-02-01T09:00:00.000Z"
+    },
+    "productId": "PRINTERABC",
+    "productDescription": "HP OfficeJet Pro 9015e All-in-One Printer",
+    "salesOrderId": "fedcba98-7654-3210-9876-543210abcdef",
+    "invoicedPrice": {
+      "amount": 299.99,
+      "currency": "CAD"
+    },
+    "solutions": [
+      {
+        "_id": {
+          "$binary": {
+            "base64": "MTEyMjMzNDQ1NTY2Nzc4ODk5MDAxMTIyMzM0NDU1NjY3Nw==",
+            "subType": "04"
+          }
+        },
+        "priceDiscount": {
+          "amount": 20,
+          "currency": "CAD"
+        },
+        "createdAt": {
+          "$date": "2023-02-01T09:05:00.000Z"
+        },
+        "_class": "PRICE_DISCOUNT",
+        "status": "COMPLETED"
+      }
+    ],
+    "version": 1,
+    "problemDetail": {
+      "businessIncidentReasonType": "PRINTING_ISSUE",
+      "businessIncidentReason": "PAPER_JAM"
+    },
+    "partner": {
+      "name": "Print Solutions",
+      "_id": "8765432"
+    }
+  }
+]
