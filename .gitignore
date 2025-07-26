@@ -1,0 +1,2 @@
+**/__pycache__/
+app/ingestion-pipeline/chroma_db/**
