@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import Optional, List
 from embedding_pipeline import SolutionsEmbeddingPipeline
 from pathlib import Path
+from enum import Enum
 
 app = FastAPI()
 
@@ -27,39 +28,33 @@ class SolutionResult(BaseModel):
     similarity: float
     field: str
 
+class QueryField(Enum):
+    PRODUCT_DESCRIPTION = "product_description"
+    BUSINESS_CONTEXT = "business_context"
+    ALL = "all"
+
 class QueryResponse(BaseModel):
     query: str
-    field: str
+    field: QueryField
     results: List[SolutionResult]
 
 @app.get("/search", response_model=QueryResponse)
 def search_solutions(
-    field: str = Query(..., description="Field to search in: 'product_description', 'business_context', or 'all'"),
+    field: QueryField = Query(..., description="Field to search in: 'product_description', 'business_context', or 'all'"),
     query: str = Query(..., description="Query string (product name or business context)"),
     n_results: int = Query(3, description="Number of results to return")
 ):
     """
     Search for similar solutions using the embedding pipeline.
     """
-    # Validate field
-    valid_fields = {"product_description", "business_context", "all"}
-    if field not in valid_fields:
-        return {"query": query, "field": field, "results": []}
-
-    # Run the query
     results = []
-    if field == "product_description":
-        chroma_field = "product_description"
-    elif field == "business_context":
-        chroma_field = "business_context"
-    else:
-        chroma_field = None  # all fields
-
+    chroma_field = field.name
+    
     # Use the pipeline's query method, but capture results
     # We'll monkey-patch the query_similar_solutions to return results instead of printing
     def get_results(query_text, field, n_results):
         collection = None
-        if field and field in pipeline.collections:
+        for field in pipeline.collections:
             collection = pipeline.collections[field]
             chroma_results = collection.query(query_texts=[query_text], n_results=n_results)
             out = []
