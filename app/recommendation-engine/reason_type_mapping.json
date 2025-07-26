@@ -1,0 +1,137 @@
+{
+  "businessIncidentReasonTypes": [
+    {
+      "reasonType": "Customer doesn't like item",
+      "businessIncidentReasons": [
+        {
+          "reason": "Doesn't like material"
+        },
+        {
+          "reason": "Doesn't like color / pattern"
+        },
+        {
+          "reason": "Color / pattern doesn't match combination item"
+        },
+        {
+          "reason": "Expected something better for the price"
+        },
+        {
+          "reason": "Doesn't like shape / cut"
+        }
+      ]
+    },
+    {
+      "reasonType": "Catalog illustration",
+      "businessIncidentReasons": [
+        {
+          "reason": "Item different than described / pictured"
+        },
+        {
+          "reason": "Color / pattern different than described / pictured"
+        }
+      ]
+    },
+    {
+      "reasonType": "Delivery / Order",
+      "businessIncidentReasons": [
+        {
+          "reason": "Delivered too late / Delivery date not met"
+        },
+        {
+          "reason": "Wrong item delivered / wrongly ordered"
+        },
+        {
+          "reason": "Item delivered twice / ordered twice"
+        },
+        {
+          "reason": "Delivery not complete"
+        },
+        {
+          "reason": "Multiple items / colors ordered for selection"
+        },
+        {
+          "reason": "Multiple sizes ordered for selection"
+        }
+      ]
+    },
+    {
+      "reasonType": "Quality",
+      "businessIncidentReasons": [
+        {
+          "reason": "Item damaged / broken"
+        },
+        {
+          "reason": "Material / manufacturing defect"
+        },
+        {
+          "reason": "Does not work"
+        },
+        {
+          "reason": "Transport damage"
+        },
+        {
+          "reason": "Other quality problems"
+        }
+      ]
+    },
+    {
+      "reasonType": "Other Reasons",
+      "businessIncidentReasons": [
+        {
+          "reason": "KC / KD Cancellation"
+        },
+        {
+          "reason": "No longer needed"
+        },
+        {
+          "reason": "Previously canceled"
+        },
+        {
+          "reason": "Payment difficulties"
+        },
+        {
+          "reason": "Suspicion of fraud"
+        },
+        {
+          "reason": "Remaining delivery / order related reasons"
+        },
+        {
+          "reason": "Miscellaneous"
+        }
+      ]
+    }
+  ],
+  "serviceReasonTypes": [
+    {
+      "reasonType": "Partially / Not provided",
+      "businessIncidentReasons": [
+        {
+          "reason": "Responsibility lies with the customer"
+        },
+        {
+          "reason": "Responsibility lies with the service provider"
+        }
+      ]
+    },
+    {
+      "reasonType": "Deficient service fulfillment",
+      "businessIncidentReasons": []
+    },
+    {
+      "reasonType": "Liability damage",
+      "businessIncidentReasons": []
+    },
+    {
+      "reasonType": "Other reasons",
+      "businessIncidentReasons": []
+    },
+    {
+      "reasonType": "Delivery not made",
+      "businessIncidentReasons": []
+    },
+    {
+      "reasonType": "Delivery delayed",
+      "businessIncidentReasons": []
+    }
+  ]
+}
