@@ -1,0 +1,33 @@
+allowed_patterns:
+- :key
+- :datakey
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: 38e2d88af8f018405249399ae34290387ce5ae59f1b5b651b8c2bc28a092ed5b
+- filename: src/App.jsx
+  checksum: 06093e30e15cdd348d8e92fb8bbbac4e97b779f9ac371ee63fc742b05bea3ce5
+- filename: src/components/FooterInput.jsx
+  checksum: 54af81068465ace86896a710846a8f17ffc080653dcc525ad8c15000dc57ac44
+- filename: src/components/UserInput.jsx
+  checksum: 6bbe1f76795fe37cfee4268fb546aa5a4f021cd6f5eade0b700de4b711c4b1b5
+- filename: app/ingestion-pipeline/data/repairs.json
+  checksum: c204110cce2c3924611cd3948bc347709b635163ee5b8a756ef22a2ccd4ee6ea
+- filename: app/ingestion-pipeline/data/priceDiscount.json
+  checksum: 24f0f7b8dc28887bbb2a5dbe3cbb4727ba144847c4ecb3a061879efe17aa4760
+- filename: app/ingestion-pipeline/data/spareparts.json
+  checksum: 8f8923dba18b1a564066929ccb2f031cc006c0d759628cc6492db492f72436ba
+- filename: app/ingestion-pipeline/data/tmh.json
+  checksum: 646a88b6ebbf91893e1ea2acf5e51ac9022ffc518e03b5cd801744a7a4da5b74
+- filename: app/ingestion-pipeline/data/ccode.json
+  checksum: 810484658dd20e288100bd2b863f6b309291cd17221d0edafa65a4622f67ad2d
+- filename: app/ingestion-pipeline/api_server.py
+  checksum: 033485985a5e957cde871889d5d46db8058d9057cb8e65fb926ecbdc14f47944
+- filename: app/ingestion-pipeline/embedding_pipeline.py
+  checksum: f25cf4fa48effe8154066278d3f8cf23517a1fd5bc3b9ff7079c70dc66304fb4
+- filename: app/chatbot/src/components/UserInput.jsx
+  checksum: 01f10ddca7f1d1ce0635fc6d69ccb3e53ad75fb4ad51234b8ee0d828c35296a9
+
+scopeconfig:
+  - scope: node
+
+version: "1.0"

@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Service & Help Chatbot</title>
+
+  <!-- TAILWIND CDN must be here, BEFORE your React script -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Optional: extend your tailwind config
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#dc001d',
+            title: '#777777',
+            body: '#212121',
+            bg: 'rgb(240,240,240)',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="bg-bg">
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
