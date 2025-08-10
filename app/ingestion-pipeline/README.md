@@ -73,32 +73,49 @@ python3 api_server.py
 - The server will be available at: [http://127.0.0.1:8083](http://127.0.0.1:8000)
 
 ### Example API Usage
-- **Process embeddings**
-  - `POST /process`
-- **Search by product:**
-  - `GET /search?field=product_description&query=LG%20OLED%20TV&n_results=3`
-- **Search by business context:**
-  - `GET /search?field=business_context&query=PRODUCT_DEFECT:%20SCREEN_DEAD_PIXELS&n_results=3`
-- **Search across all fields:**
-  - `GET /search?field=all&query=battery%20issues&n_results=3`
+- For testing the search functionality: 
+  - **Process embeddings**
+    - `POST /process`
+  ##### Example Response
+  ```json
+  {
+    "status": "ok"
+  }
+  ```
+  - **Search by product:**
+    - `GET /search?field=product_description&query=LG%20OLED%20TV&n_results=3`
+  - **Search by business context:**
+    - `GET /search?field=business_context&query=PRODUCT_DEFECT:%20SCREEN_DEAD_PIXELS&n_results=3`
+  - **Search across all fields:**
+    - `GET /search?field=all&query=battery%20issues&n_results=3`
+  ##### Example Response
+  ```json
+  {
+    "query": "LG OLED TV",
+    "field": "product_description",
+    "results": [
+      {
+        "productDescription": "Samsung Galaxy Tab S9 Ultra",
+        "businessIncidentContext": "CUSTOMER_ERROR: INCORRECT_ORDER",
+        "solutionType": "PRICE_DISCOUNT",
+        "partner_id": "3210987",
+        "similarity": 0.4156303,
+        "field": "BUSINESS_CONTEXT"
+      }
+    ]
+  }
+  ```
+- For solution recommendations:
+  - **Basic solution recommendation:**
+    - `GET /recommend?product=dress&reason=SMALL_SIZE&reasonType=ORDERED_WRONG_SIZE&partnerId=123456`
+  ##### Example Response
+  ```json
+  {
+    "solution": "REPAIR",
+    "reason": "The similarity score is high and the documents indicates the incident is due to WRONG_SIZE: TOO_SMALL, which requires repair."
+  }
+  ```
 
-### Example Response
-```json
-{
-  "query": "LG OLED TV",
-  "field": "product_description",
-  "results": [
-    {
-      "productDescription": "Samsung Galaxy Tab S9 Ultra",
-      "businessIncidentContext": "CUSTOMER_ERROR: INCORRECT_ORDER",
-      "solutionType": "PRICE_DISCOUNT",
-      "partner_id": "3210987",
-      "similarity": 0.4156303,
-      "field": "BUSINESS_CONTEXT"
-    }
-  ]
-}
-```
 
 ## 5. Customization
 - Add new JSON files to `data/` and rerun the parser and embedding pipeline.

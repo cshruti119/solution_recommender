@@ -2,3 +2,4 @@ chromadb
 numpy
 sentence-transformers 
 fastapi
+ollama

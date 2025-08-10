@@ -1,3 +1,5 @@
+from http.client import responses
+
 from fastapi import FastAPI, Query, Depends
 from pydantic import BaseModel
 from typing import List
@@ -5,6 +7,9 @@ from pathlib import Path
 from retriever import Retriver, get_retriever
 from ingestor import SolutionsEmbeddingPipeline, get_embeddings
 from enum import Enum
+from ollama import chat
+from ollama import ChatResponse
+
 import logging
 import uvicorn
 
@@ -82,6 +87,19 @@ def search_solutions(
 
     results = get_results(query, field_name, n_results)
     return QueryResponse(query=query, field=field, results=results)
+
+@app.get("/recommend", response_model=dict)
+def recommend(product: str = Query(..., description="Recommend solution for the product"),
+              reason: str = Query(..., description="Problem Reason"),
+              reasonType: str = Query(..., description="Problem Reason Type"),
+              partnerId: str = Query(..., description="Partner ID"),
+              retriever: Retriver = Depends(get_retriever),
+):
+    LOG.info(product, reason, reasonType, partnerId)
+    response = retriever.recommend_solution(product,reason,reasonType)
+    print("=====>",response)
+    return response
+
 
 if __name__ == '__main__':
     current_dir = Path(__file__).parent

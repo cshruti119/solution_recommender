@@ -1,5 +1,8 @@
 from chroma_config import ChromaConfig
 from fastapi import Depends
+from ollama import chat
+from ollama import ChatResponse
+import json
 
 # @lru_cache()
 def get_retriever():
@@ -23,6 +26,47 @@ class Retriver:
         """Query specifically by business context (incident type + reason)."""
         print(f"Querying for all...")
         return self.db_config.query_documents(query_text, 'all', n_results)
+
+    def recommend_solution(self, product_description: str, reason: str, reason_type: str):
+        business_context = f"{reason}:{reason_type}"
+        db_response = self.query_by_business_context(business_context, n_results=3)
+        print(f"=====> response from db: {db_response}")
+        response: ChatResponse = chat(
+            model='gemma3',
+            messages=[
+                {
+                    'role': 'system',
+                    'content': 'You are a helpful assistant who recommends solutions.',
+                },
+                {
+                    'role': 'assistant',
+                    'content': f"Based on the response from the db : {db_response}. "
+                               f"Consider the similarity_score of the solution for relevance. "
+                               f"Lower the score more the relevance. "
+                               f"Make sure response is in json format with field solution and reason."
+                               f"Field solution should have only the solution name which is recommended."
+                               f"Field reason should have only the reason for which this solution is recommended."
+                },
+                # {
+                #     'role': 'user',
+                #     'content': f"The customer is having issue with following product: {product_description} for the following reason is {reason}:{reason_type}.Please provide a solution recommendation based on the product description and reason provided.",
+                # },
+            ]
+        )
+        model_response = self.extract_json_from_string(response['message']['content'])
+        print(f"response from model: {model_response}")
+        return model_response
+
+    def extract_json_from_string(self, s: str):
+        try:
+            # Find the first '{' and the last '}'
+            start = s.find('{')
+            end = s.rfind('}') + 1
+            json_str = s[start:end]
+            return json.loads(json_str)
+        except Exception as e:
+            print(f"Error extracting JSON: {e}")
+            return None
 
     def print_results(result):
         print(result)
