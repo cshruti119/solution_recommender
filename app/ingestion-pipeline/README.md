@@ -28,6 +28,23 @@ app/ingestion-pipeline/
 - Python 3.9+
 - [pip](https://pip.pypa.io/en/stable/)
 - [virtualenv](https://virtualenv.pypa.io/en/latest/) (recommended)
+- Docker (optional, for running ChromaDB in a container)
+- chroma (client library for ChromaDB)
+
+
+### Start ChromaDB (optional)
+```bash
+docker run -v ./chroma-data:/data -p 8000:8000 chromadb/chroma:latest
+```
+Incase of errors like 'error while creating mount source path', execute the below command:
+```bash
+chmod -R 777 ./chroma-data
+```
+
+### Check records in chroma_db
+```bash
+chroma browse solutions_product_description --host=http://localhost:8000
+```
 
 ### Install dependencies
 ```bash
@@ -47,24 +64,17 @@ python parser.py
 ```
 - Output: `../csv_data/solutions.csv`
 
-## 3. Generate Embeddings & Build Vector DB
-
-Create semantic embeddings for product descriptions and business context, and store them in ChromaDB:
-```bash
-cd ..  # if inside data/
-python embedding_pipeline.py
-```
-- Output: ChromaDB files in `chroma_db/`
-
-## 4. Run the API Server (Demo/Test)
+## 3. Run the API Server (Demo/Test)
 
 Expose a REST API for querying similar solutions:
 ```bash
-uvicorn api_server:app --reload
+python3 api_server.py
 ```
-- The server will be available at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+- The server will be available at: [http://127.0.0.1:8083](http://127.0.0.1:8000)
 
 ### Example API Usage
+- **Process embeddings**
+  - `POST /process`
 - **Search by product:**
   - `GET /search?field=product_description&query=LG%20OLED%20TV&n_results=3`
 - **Search by business context:**
@@ -79,14 +89,12 @@ uvicorn api_server:app --reload
   "field": "product_description",
   "results": [
     {
-      "productDescription": "LG OLED C3 Series 65-inch 4K UHD Smart TV",
-      "businessIncidentReasonType": "PRODUCT_DEFECT",
-      "businessIncidentReason": "SCREEN_DEAD_PIXELS",
-      "solutionType": "COMPENSATION_CODE",
-      "partner_id": "1000101",
-      "createdAt": "1752842529",
-      "similarity": 0.4171,
-      "field": "product_description"
+      "productDescription": "Samsung Galaxy Tab S9 Ultra",
+      "businessIncidentContext": "CUSTOMER_ERROR: INCORRECT_ORDER",
+      "solutionType": "PRICE_DISCOUNT",
+      "partner_id": "3210987",
+      "similarity": 0.4156303,
+      "field": "BUSINESS_CONTEXT"
     }
   ]
 }
