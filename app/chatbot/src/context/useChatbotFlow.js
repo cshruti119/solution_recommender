@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { getRecentOrdersForUser } from "../services/orderService";
 import { fetchMatchingProblemReasons } from "../services/problemReasonsService";
-import { fetchMatchingSolution } from "../services/solutionService";
+import { useSolutionApi } from "../hooks/useSolutionApi";
 import {
   CALL_CUSTOMER_SUPPORT_MESSAGE,
   CURRENTLY_UNSUPPORTED_MESSAGE,
@@ -14,6 +14,7 @@ import {
   THANK_YOU_MESSAGE,
 } from "../data/constants";
 import { useChatContext } from "./ChatContext";
+import { fetchMatchingSolution } from "../services/solutionService";
 
 export const useChatbotFlow = () => {
   const [messages, setMessages] = useState([]);
@@ -26,13 +27,16 @@ export const useChatbotFlow = () => {
   const {
     setSelectedOrder,
     setSelectedProduct,
-    selectedProblemReasonType,
-    setSelectedProblemReasonType,
+    selectedProblemReason,
+    setSelectedProblemReason,
+    selectedProduct,
     setSelectedProblemSubReason,
     setUserInput,
     setUserFeedback,
     setAllMessages,
   } = useChatContext();
+
+  const { getSolution, data: solutionData, isError } = useSolutionApi();
 
   const showMessage = (sender, text, type = "text", data = null) => {
     setMessages((msgs) => {
@@ -114,9 +118,9 @@ export const useChatbotFlow = () => {
   };
 
   const handleReasonSelection = async (reasonType) => {
-    setSelectedProblemReasonType(reasonType);
+    setSelectedProblemReason(reasonType);
     showMessage(SENDER.USER, reasonType);
-    setSelectedProblemReasonType(reasonType);
+    setSelectedProblemReason(reasonType);
     if (reasonType?.toLowerCase().includes("other")) {
       sendContactSupportMessage();
       return;
@@ -136,16 +140,24 @@ export const useChatbotFlow = () => {
   };
 
   const handleSubReasonSelection = async (subReason) => {
-    setSelectedProblemSubReason(subReason);
-    showMessage(SENDER.USER, subReason);
-
     if (subReason?.toLowerCase().includes("other")) {
+      showMessage(SENDER.USER, subReason);
+      setSelectedProblemSubReason(subReason);
       sendContactSupportMessage();
       return;
     }
 
-    if (selectedProblemReasonType && subReason) {
-      await fetchSolution(selectedProblemReasonType + " - " + subReason);
+    showMessage(SENDER.USER, subReason);
+    setSelectedProblemSubReason(subReason);
+
+    if (selectedProblemReason) {
+      console.log(selectedProduct)
+      await fetchSolution({
+        partnerId: selectedProduct.partnerId,
+        product: selectedProduct.productName,
+        reason: selectedProblemReason,
+        reasonType: subReason
+      });
     }
   };
 
@@ -157,28 +169,51 @@ export const useChatbotFlow = () => {
     setInput("");
   };
 
-  const fetchSolution = async (reason) => {
+  const fetchSolution = async (params) => {
     setLoading(true);
-    let solution;
     try {
-      solution = await fetchMatchingSolution(reason);
+      const solutionData = await fetchMatchingSolution(params);
+      if (solutionData) {
+        showMessage(
+          SENDER.BOT,
+          "Recommended solution:",
+          "solution_presented",
+          solutionData
+        );
+      } else {
+        showMessage(
+          SENDER.BOT,
+          "Recommended solution:",
+          "solution_presented",
+          "No solution found"
+        );
+      }
+
+      showMessage(
+        SENDER.BOT,
+        "Are you okay to proceed with this solution?",
+        "solution_options",
+        ["Yes", "No"]
+      );
+      setStep("solution_feedback");
     } catch (e) {
-      solution = "Return";
+      console.error("Error fetching solution:", e);
+      showMessage(
+        SENDER.BOT,
+        "Recommended solution:",
+        "solution_presented",
+        "Return"
+      );
+      showMessage(
+        SENDER.BOT,
+        "Are you okay to proceed with this solution?",
+        "solution_options",
+        ["Yes", "No"]
+      );
+      setStep("solution_feedback");
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
-    showMessage(
-      SENDER.BOT,
-      "Recommended solution:",
-      "solution_presented",
-      solution,
-    );
-    showMessage(
-      SENDER.BOT,
-      "Are you okay to proceed with this solution?",
-      "solution_options",
-      ["Yes", "No"],
-    );
-    setStep("solution_feedback");
   };
 
   const handleSolutionChoice = (choice) => {

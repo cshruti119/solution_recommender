@@ -5,7 +5,7 @@ const ChatContext = createContext();
 export const ChatProvider = ({ children }) => {
   const [selectedOrder, setSelectedOrder] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [selectedProblemReasonType, setSelectedProblemReasonType] =
+  const [selectedProblemReason, setSelectedProblemReason] =
     useState(null);
   const [selectedProblemSubReason, setSelectedProblemSubReason] =
     useState(null);
@@ -20,8 +20,8 @@ export const ChatProvider = ({ children }) => {
         setSelectedOrder,
         selectedProduct,
         setSelectedProduct,
-        selectedProblemReasonType,
-        setSelectedProblemReasonType,
+        selectedProblemReason,
+        setSelectedProblemReason,
         selectedProblemSubReason,
         setSelectedProblemSubReason,
         userInput,

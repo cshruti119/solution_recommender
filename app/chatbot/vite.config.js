@@ -5,6 +5,13 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3001,
-    strictPort: true
+    strictPort: true,
+    proxy: {
+      '/recommend': {
+        target: 'http://localhost:8083',
+        changeOrigin: true,
+        secure: false
+      }
+    }
   }
 });

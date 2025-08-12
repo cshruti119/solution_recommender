@@ -48,7 +48,7 @@ This project uses a React Context (`ChatContext`) to store all relevant chatbot 
 
 - **selectedOrder**: The order selected by the user
 - **selectedProduct**: The product selected by the user
-- **selectedProblemReasonType**: The main problem reason type chosen by the user
+- **selectedProblemReason**: The main problem reason type chosen by the user
 - **selectedProblemSubReason**: The specific sub reason selected by the user
 - **userInput**: Any free-text input provided by the user (e.g., for 'Other' reasons)
 - **userFeedback**: Feedback provided by the user after the solution step
